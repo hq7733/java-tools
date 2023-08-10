@@ -4,12 +4,11 @@ import org.springframework.util.FileCopyUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
-import java.nio.channels.FileChannel;
 
 import static com.htools.io.FileUtils.getFileExtension;
 
 /**
- * @author Zhang.hq
+ * @author hq
  * @date 2023/8/8
  */
 public class BufferedUtils {
