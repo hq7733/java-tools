@@ -13,4 +13,14 @@ public class StringUtils {
     public boolean notEmpty(String str) {
         return !isEmpty(str);
     }
+
+    public String removeDuplicates(String str) {
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < str.length(); i++) {
+            if (str.indexOf(str.charAt(i)) == i) {
+                sb.append(str.charAt(i));
+            }
+        }
+        return sb.toString();
+    }
 }
